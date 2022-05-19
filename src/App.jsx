@@ -1,7 +1,6 @@
 import { Icon } from '@iconify/react';
 import { useState, useEffect } from 'react';
 import moment from "moment";
-import 'animate.css';
 import { BrowserRouter as Router, Routes, Route, useParams, Link } from "react-router-dom";
 
 
