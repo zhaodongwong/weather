@@ -34,7 +34,7 @@ function Weather() {
     <div className="flex h-screen">
      <div className="w-1/2 h-full bg-cyan-500 flex flex-col justify-center p-16 text-white">
        <h1 className="text-2xl font-['Roboto']">
-         {moment(data.location.localtime_epoch * 1000).format("ddd, MMM D")}
+         {moment(data.location.localtime_epoch * 1000).format("ddd, MMM D, h:mm")}
        </h1>
        <h2 className="text-5xl mt-8">
          Hi, Zhao Dong!
