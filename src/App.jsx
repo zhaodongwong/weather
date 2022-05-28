@@ -14,7 +14,7 @@ function Weather() {
 
  useEffect(() => {
    setQuery('')
-   fetch(`http://api.weatherapi.com/v1/forecast.json?key=${import.meta.env.VITE_API_KEY}&q=${place || 'Johor Bahru'}&days=3&aqi=no&alerts=no`)
+   fetch(`https://api.weatherapi.com/v1/forecast.json?key=${import.meta.env.VITE_API_KEY}&q=${place || 'Johor Bahru'}&days=3&aqi=no&alerts=no`)
    .then(res => res.json())
    .then(d => setData(d))
  }, [place]);
@@ -22,7 +22,7 @@ function Weather() {
  useEffect(() => {
    setResults([])
    if (query){
-     fetch( `http://api.weatherapi.com/v1/search.json?key=${import.meta.env.VITE_API_KEY}&q=${query}}`)
+     fetch( `https://api.weatherapi.com/v1/search.json?key=${import.meta.env.VITE_API_KEY}&q=${query}}`)
      .then(res => res.json())
    .then(d => setResults(d))
    }
