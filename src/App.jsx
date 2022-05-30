@@ -33,7 +33,7 @@ function Weather() {
   return (data 
     ?
     <div className="flex lg:h-screen tracking-wide flex-col h-full lg:flex-row">
-     <div className="w-full lg:w-1/2 h-full bg-cyan-500 flex flex-col justify-center p-10 lg:p-16 text-white">
+     <div className="w-full lg:w-1/2 h-full bg-cyan-500 flex flex-col justify-center p-5 lg:p-16 text-white">
        <h1 className="text-2xl font-['Roboto'] animate__animated animate__slideInRight ">
          {moment(data.location.localtime_epoch * 1000).format("ddd, MMM D, h:mm")}
        </h1>
