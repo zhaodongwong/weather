@@ -33,7 +33,7 @@ function Weather() {
   return (data 
     ?
     <div className="flex lg:h-screen tracking-wide flex-col h-full lg:flex-row">
-     <div className="w-full lg:w-1/2 h-full bg-cyan-500 flex flex-col justify-center p-16 lg:p-10 text-white">
+     <div className="w-full lg:w-1/2 h-full bg-cyan-500 flex flex-col justify-center p-10 lg:p-16 text-white">
        <h1 className="text-2xl font-['Roboto'] animate__animated animate__slideInRight ">
          {moment(data.location.localtime_epoch * 1000).format("ddd, MMM D, h:mm")}
        </h1>
@@ -68,7 +68,7 @@ function Weather() {
        <Icon icon="bi:cloud-fill" color="white" className='opacity-20 absolute bottom-24 left-1/3 mr-5' width="100" height="100"/>
      </div>
      <div className="w-full lg:w-1/2 h-full lg:overflow-y-auto ">
-       <div className='ml-20 lg:ml-1 flex items-end mt-5 relative'>
+       <div className='ml-1 lg:ml-20 flex items-end mt-5 relative'>
          <input value={query} onChange={(e) => setQuery(e.target.value)} type="text" placeholder="Location" className='flex-1 border-b-2 border-zinc-200 placeholder-zinc-300 pb-2 text-2xl focus:outline-none'/>
          <div className='w-12 h-12 bg-cyan-500 flex items-center justify-center'>
            <button>
@@ -87,7 +87,7 @@ function Weather() {
               ))}
           </div>
        </div>
-       <div className='m-20 lg:m-5 mt-12'>
+       <div className='m-5 lg:m-20 mt-12'>
          <h8 className="text-3xl animate__animated animate__lightSpeedInRight">Weather Details</h8>
          <div className="flex flex-col divide-y space-y-3 text-xl mt-5 ">
            <div className="justify-between flex flex-row p-3 ">
@@ -116,7 +116,7 @@ function Weather() {
          </div>
        </div>
      </div>
-     <div className='m-20 lg:m-5 mt-12'>
+     <div className='m-5 lg:m-20 mt-12'>
      <h8 className="text-3xl animate__animated animate__lightSpeedInRight">Forecasts</h8>
      <div className='flex flex-col divide-y space-y-3 text-xl mt-5'>
         {data.forecast.forecastday.map((day) => (
