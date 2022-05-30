@@ -52,7 +52,7 @@ function Weather() {
        <h5 className='text-3xl mt-6 animate__animated animate__slideInLeft'>
        {data.current.condition.text}
        </h5>
-       <h7 className="text-6xl animate__animated animate__fadeInDown">
+       <h7 className="text-3xl lg:text-6xl animate__animated animate__fadeInDown">
          {data.current.temp_c} °C
        </h7>
        </div>
